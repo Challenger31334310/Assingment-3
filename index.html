@@ -23,8 +23,7 @@
         #nav-1 {
             display: grid;
             grid-template-columns: 40% 30% 30%;
-            margin: 0 auto;
-            width: 78rem;
+            
         }
 
         #brust {
@@ -43,6 +42,18 @@
             left: 17rem;
         }
 
+
+        /* second -section */
+
+        .second-common-info{
+            text-align: center;
+            
+        }
+
+
+
+
+
         /* responsive for mobile */
         @media screen and (max-width:576px) {
             #nav-hide {
@@ -53,15 +64,32 @@
             display: grid;
             grid-template-columns: 10% 90%;
             background-color: white
-            ;
+            ;}
            #color{
             color: black;
            }
            
+           #second-section {
+            height: 15rem;
+            margin-top: 1rem;
            
-        }
+           
+           }
+           #change{
+            font-size: medium;
+           }
+           #circle{
+            width: 1.2rem;
+           }
+           
+        
 
     }
+
+
+
+
+
 
         /* another device*/
         @media screen and  (min-width:577px) and (max-width:1300px) {
@@ -72,9 +100,12 @@
     </style>
 </head>
 
+
+
+
 <body>
-    <!--nav-ection-->
-    <div class="navbar bg-orange-500  rounded-xl" id="nav-1">
+    <!--nav-section-->
+    <div class="navbar bg-orange-500  rounded-md" id="nav-1">
         <div class="flex-1">
             <ul class="flex gap-6 pl-2 text-sky-50" id="nav-hide">
                 <li>Home</li>
@@ -110,6 +141,58 @@
             </div>
         </div>
     </div>
+
+    <!--second-section-->
+    <div class="carousel w-auto " id="second-section">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="B8A3-fruit-brust-main/images/banner1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle" id="circle">❮</a> 
+            <div class="second-common-info">
+                <p class="text-5xl text-white font-extrabold pb-2" id="change">Exotic tastes at your  <br>doorstep</p>
+            <p class="text-xl text-white pb-2" id="change">We supply highly quality organic products</p>
+            <button class="btn btn-secondary">Shop Now</button>
+            </div>
+            <a href="#slide2" class="btn btn-circle" id="circle" id="btn">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="B8A3-fruit-brust-main/images/banner2.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle" id="circle">❮</a> 
+            <div class="second-common-info">
+                <p class="text-5xl text-white font-extrabold pb-2" id="change">Exotic tastes at your  <br>doorstep</p>
+            <p class="text-xl text-white pb-2" id="change">We supply highly quality organic products</p>
+            <button class="btn btn-secondary" id="btn">Shop Now</button>
+            </div>
+            <a href="#slide3" class="btn btn-circle" id="circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="B8A3-fruit-brust-main/images/banner3.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle" id="circle" id="btn">❮</a> 
+            <div class="second-common-info">
+                <p class="text-5xl text-white font-extrabold pb-2" id="change">Exotic tastes at your  <br>doorstep</p>
+            <p class="text-xl text-white pb-2" id="change">We supply highly quality organic products</p>
+            <button class="btn btn-secondary" id="btn">Shop Now</button>
+            </div>
+            <a href="#slide4" class="btn btn-circle" id="circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="B8A3-fruit-brust-main/images/banner4.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle" id="circle">❮</a> 
+             <div class="second-common-info">
+                <p class="text-5xl text-white font-extrabold pb-2" id="change">Exotic tastes at your  <br>doorstep</p>
+            <p class="text-xl text-white pb-2" id="change">We supply highly quality organic products</p>
+            <button class="btn btn-secondary" id="btn">Shop Now</button>
+            </div>
+            <a href="#slide1" class="btn btn-circle" id="circle">❯</a>
+          </div>
+        </div>
+      </div>
 </body>
 
 </html>
