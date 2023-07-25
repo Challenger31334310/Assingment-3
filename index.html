@@ -98,8 +98,29 @@
            #circle{
             width: 1.2rem;
            }
+           /*bonous part */
            .b-hide{
             display: none;
+           }
+           /*3 part */
+           #third-section{
+                display: grid;
+                grid-template-rows:repeat(2,1fr);
+                gap:1rem;
+           }
+           #de{
+            font-size: 1.5rem;
+            text-align: center;
+           }
+           #pe{
+            font-size: 1rem;
+            text-align: center;
+           }
+          #grid {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            margin-bottom: 1rem;
            }
            
         
@@ -240,14 +261,18 @@
         <!--bonous section-->
         <div class="flex items-center justify-around" id="third-section">
             <div class="third-info">
-                <p class="text-black text-3xl font-bold pb-3">Deal of the day</p>
-                <p class="text-black text-xl">Contrary to popular belief, is not simply random text.  <br>It has roots in a piece of classical  <br>Latin literature from 45 BC, making it over 2000 years old.</p>
+                <p class="text-black text-3xl font-bold pb-3" id="de">Deal of the day</p>
+                <p class="text-black text-xl" id="pe">Contrary to popular belief, is not simply random text.  <br>It has roots in a piece of classical  <br>Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
+
+
+
+
             <div class="date">
-                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-                    <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max" id="grid">
+                    <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content"id="spe">
                       <span class="countdown font-mono text-5xl">
-                        <span style="--value:15;"></span>
+                        <span style="--value:15;" id="value"></span>
                       </span>
                       days
                     </div> 
