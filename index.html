@@ -121,6 +121,9 @@
             }
 
             /*3 part */
+            #date{
+                text-align: center;
+            }
             #third-section {
                 display: grid;
                 grid-template-rows: repeat(2, 1fr);
@@ -148,7 +151,7 @@
             grid-template-columns: repeat(1,1fr);
             grid-template-rows: repeat(4,1fr);
             
-        margin-top: 65rem;
+        margin-top: 60rem;
        padding-bottom: 3rem;
         }
 
@@ -286,38 +289,37 @@
             <p class="text-black text-xl" id="pe">Contrary to popular belief, is not simply random text. <br>It has
                 roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
+  
+<!--Date section-->
+<div class="grid grid-flow-col gap-5 text-center auto-cols-max" id="date">
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:15;"></span>
+      </span>
+      days
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:10;"></span>
+      </span>
+      hours
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:24;"></span>
+      </span>
+      min
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:49;"></span>
+      </span>
+      sec
+    </div>
+  </div>
 
 
-
-
-        <div class="date">
-            <div class="grid grid-flow-col gap-5 text-center auto-cols-max" id="grid">
-                <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content" id="spe">
-                    <span class="countdown font-mono text-5xl">
-                        <span style="--value:15;" id="value"></span>
-                    </span>
-                    days
-                </div>
-                <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                    <span class="countdown font-mono text-5xl">
-                        <span style="--value:10;"></span>
-                    </span>
-                    hours
-                </div>
-                <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                    <span class="countdown font-mono text-5xl">
-                        <span style="--value:24;"></span>
-                    </span>
-                    min
-                </div>
-                <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                    <span class="countdown font-mono text-5xl">
-                        <span style="--value:8;"></span>
-                    </span>
-                    sec
-                </div>
-            </div>
-        </div>
+      
     </div>
 
     <!--forth section-->
